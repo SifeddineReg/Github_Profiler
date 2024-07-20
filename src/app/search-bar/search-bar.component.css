@@ -1,0 +1,31 @@
+.search_bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	width: 30%;
+}
+
+.search_input {
+	position: relative;
+	width: 100%;
+	border: 2px solid;
+	border-radius: 50px;
+	background: transparent;
+	background-clip: padding-box;
+	padding: 20px;
+	font-size: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.search_input::before {
+	position: absolute;
+	top: -2px; bottom: -2px;
+	left: -2px; right: -2px;
+	background: linear-gradient(232.49deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+	content: '';
+	z-index: -1;
+	border-radius: 50px;
+}

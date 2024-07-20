@@ -1,0 +1,134 @@
+.card {
+    position: relative;
+    width: 45%;
+    height: 60%;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background: linear-gradient(232deg, rgb(8, 53, 121) 0%, rgba(255, 255, 255, 0) 100%);
+    background-clip: padding-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card::before {
+    position: absolute;
+    top: -2px; bottom: -2px;
+    left: -2px; right: -2px;
+    background: linear-gradient(232.49deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.left {
+    flex: 1;
+    padding: 10px;
+    height: 100%;
+    width: 30%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: space-around;
+    flex: 2;
+    padding: 10px;
+    height: 100%;
+    width: 70%;
+}
+
+.user_image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user_name {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.user_tag {
+    display: block;
+    font-size: 1em;
+    color: #b0b0b0;
+    margin-top: 5px;
+}
+
+.socials {
+    margin-top: 20px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.socials div, .socials a {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.repos, .followers, .following {
+    text-align: center;
+}
+
+.stat span:first-child {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.biography {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bio{
+    margin: 0;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.date_joined {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.date_joined span:first-child {
+    display: block;
+}
