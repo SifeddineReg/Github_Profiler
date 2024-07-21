@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Trykker&display=swap');
+
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: white;
+}
+
+.title h2 {
+    margin: 0;
+    font-family: 'trykker', serif;
+    font-weight: normal;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+.left-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+
+.left-section .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 70%;
+    width: 100%;
+}
+
+.search {
+    width: 100%;
+}
+
+.right-section {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

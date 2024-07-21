@@ -1,31 +1,79 @@
 .search_bar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-	width: 30%;
+  align-items: flex-end;
 }
 
 .search_input {
-	position: relative;
-	width: 100%;
-	border: 2px solid;
-	border-radius: 50px;
-	background: transparent;
-	background-clip: padding-box;
-	padding: 20px;
-	font-size: 1.2rem;
-	display: flex;
-	flex-direction: row;
-	color: white;
-	font-family: 'Montserrat', sans-serif;
+  width: 90%;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
 }
 
 .search_input::before {
-	position: absolute;
-	top: -2px; bottom: -2px;
-	left: -2px; right: -2px;
-	background: linear-gradient(232.49deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-	content: '';
-	z-index: -1;
-	border-radius: 50px;
+  width: 100%;
+  height: 60%;
+  aspect-ratio: 1;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1.5px;
+  border-radius: 50px;
+  background: linear-gradient(93.27deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+          mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+.search_input input {
+  position: relative;
+  top: -13px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  padding: 15px;
+}
+
+.search_input input::placeholder {
+  opacity: 0.5;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search_input input:focus {
+  outline: none;
+}
+
+.search_button {
+  position: relative;
+  width: 50%;
+  border: 1.5px solid transparent;
+  border-radius: 50px;
+  background: linear-gradient(342deg, rgb(5 54 128) 0%, rgb(18 73 28 / 71%) 100%);
+  background-clip: padding-box;
+  padding: 10px;
+  font-size: 1.2em;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search_button::before {
+  position: absolute;
+  top: -1.5px; bottom: -1.5px;
+  left: -1.5px; right: -1.5px;
+  background: linear-gradient(93.27deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  content: '';
+  z-index: -1;
+  border-radius: 50px;
 }
