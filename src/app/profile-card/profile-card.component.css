@@ -1,9 +1,10 @@
 .card {
+    width: 100%;
     position: relative;
     height: 60%;
     border: 2px solid transparent;
     border-radius: 50px;
-    background: linear-gradient(163deg, rgb(5 54 128) 0%, rgb(18 73 28 / 71%) 100%);
+    background: linear-gradient(163deg, rgb(5 54 128) 0%, rgb(4 22 7 / 71%) 100%);
     background-clip: padding-box;
     padding: 20px;
     display: flex;
@@ -89,6 +90,9 @@ a {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 5px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 i {
@@ -111,7 +115,7 @@ i {
 }
 
 .biography {
-    /* margin-top: -20px; */
+    margin-top: -50px;
     display: flex;
     flex-direction: column;
 }

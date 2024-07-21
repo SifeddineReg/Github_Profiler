@@ -6,7 +6,7 @@
           <h2>Dev</h2>
           <h2>Finder</h2>
         </div>
-        <app-search-bar class="search"></app-search-bar>  
+        <app-search-bar class="search" (userProfile)="profileCardComponent.userProfile = $event"></app-search-bar>  
       </div>
       <div class="middle-line right">
         <svg width="95" height="747" viewBox="0 0 95 747" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="right-section">
-      <app-profile-card></app-profile-card>
+      <app-profile-card #profileCardComponent class="profile"></app-profile-card>
     </div>
   </div>
 </div>
