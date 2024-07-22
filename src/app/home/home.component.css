@@ -60,5 +60,34 @@
 }
 
 .profile {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .home {
+    align-items: center;
+    height: auto;
+    background-repeat: no-repeat;
+  }
+  .middle-line {
+    display: none;
+  }
+  .content {
+    flex-direction: column;
     width: 90%;
+  }
+  .left-section, .right-section {
+    width: 100%;
+    justify-content: center;
+  }
+  .left-section {
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 2em;
+  }
 }
